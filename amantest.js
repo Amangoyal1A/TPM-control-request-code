@@ -1,14 +1,7 @@
 const axios = require("axios");
 const { requests } = require("./requestpayload");
 
-const url = "https://develop.zoop.one/api/v1/in/vehicle/rc/advance";
-let running = true;
 
-const headers = {
-  "Content-Type": "application/json",
-  "app-id": "663536c1ffef4c0028343875",
-  "api-key": "C61ERNS-SJ2MBDA-Q8BK02F-23SRXZT",
-};
 
 const requestData = (vehicleRegistrationNumber) => ({
   mode: "sync",
